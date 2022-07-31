@@ -1,0 +1,13 @@
+﻿@model TextField
+@{    
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeywords;
+    <p>@Config.CompanyName</p>
+    <p>Контактный телефон: @Config.CompanyPhone, @Config.CompanyPhoneShort</p>
+    <p>email: @Config.CompanyEmail</p>
+}
+
+<div>
+    @Html.Raw(Model.Text)
+</div>
